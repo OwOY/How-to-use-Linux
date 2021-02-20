@@ -54,5 +54,4 @@ python -m pip freeze > requirements.txt
 - 虛擬環境安裝套件導入  
 ```
 python -m pip install -r requirements.txt  
- 
 ```
