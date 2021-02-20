@@ -13,8 +13,14 @@ tzselect  選擇時區
 
 Linux語法 : https://kknews.cc/zh-tw/code/2kk2a9z.html
 
-
-
+# wget指令抓取
+```
+wget <url>
+```
+- 若出現憑證SSL_1108
+```
+wget --no-check-certificate <url>
+```
 ## 修改瀏覽器預設無痕位置  
 
 >> /usr/share/applications
