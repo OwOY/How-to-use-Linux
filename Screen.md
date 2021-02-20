@@ -11,7 +11,9 @@ Screen -ls
 Screen -r {PID or Screen_name}
 ```
 - 指定Screen  
+```
 screen -S  {PID or Screen_name}  
+```
 - 關閉Screen  
 進入Screen後Ctrl+D  
 若想返回背景 則Ctrl+A+D  
