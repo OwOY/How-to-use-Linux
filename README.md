@@ -1,3 +1,4 @@
+<img src="https://jimmylab.files.wordpress.com/2018/09/0.jpg" width="800px">
 # 記錄如何使用Linux
 
 - 最高權限
