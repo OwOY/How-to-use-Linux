@@ -33,7 +33,7 @@ source ~/.bashrc
 ```
 - 新增虛擬環境名叫crawler  
 ```
-mkvirtualenv -p python crawler  
+mkvirtualenv crawler --python=python3
 ```
 - 退出虛擬環境  
 ```
