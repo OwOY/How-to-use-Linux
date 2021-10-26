@@ -62,6 +62,8 @@ sudo rm /var/lib/dpkg/lock
 sudo rm /var/lib/apt/lists/lock  
 sudo rm /var/cache/apt/archives/lock  
 ```
+## CXXABI 缺少時
 
+>> http://www.vuln.cn/wp-content/uploads/2019/08/libstdc.so_.6.0.26.zip
 ## 更多Linux語法  
 Linux語法 : https://kknews.cc/zh-tw/code/2kk2a9z.html
