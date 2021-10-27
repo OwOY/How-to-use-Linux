@@ -71,6 +71,7 @@ curl ftp://ftp.mirrorservice.org/sites/sourceware.org/pub/gcc/releases/gcc-4.9.2
 tar xvfj gcc-4.9.2.tar.bz2
 
 cd gcc-4.9.2
+yum install gcc
 ./configure --disable-multilib --enable-languages=c,c++
 make -j 4
 make install
