@@ -63,17 +63,12 @@ sudo rm /var/lib/apt/lists/lock
 sudo rm /var/cache/apt/archives/lock  
 ```
 ## CXXABI 缺少時，編譯
+1. 下載libstdc++.so.6.2.26
+[下載libstdc++.so.6.2.26](https://github.com/OwOY/How-to-use-Linux/blob/master/libstdc%2B%2B.so.6.0.26)
+2. 覆蓋原有libstdc++.so.6軟連結
 ```
-yum -y install libmpc-devel mpfr-devel gmp-devel bzip2 gcc gcc-c++ make
-
-cd ~/Downloads
-curl ftp://ftp.mirrorservice.org/sites/sourceware.org/pub/gcc/releases/gcc-4.9.2/gcc-4.9.2.tar.bz2 -O
-tar xvfj gcc-4.9.2.tar.bz2
-
-cd gcc-4.9.2
-./configure --disable-multilib --enable-languages=c,c++
-make -j 4
-make install
+1. rm libstdc++.so.6
+2. ln libstdc++.so.6.0.26 libstdc++so.6
 ```
 ## 更多Linux語法  
 Linux語法 : https://kknews.cc/zh-tw/code/2kk2a9z.html
