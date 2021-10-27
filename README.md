@@ -62,8 +62,18 @@ sudo rm /var/lib/dpkg/lock
 sudo rm /var/lib/apt/lists/lock  
 sudo rm /var/cache/apt/archives/lock  
 ```
-## CXXABI 缺少時
+## CXXABI 缺少時，編譯
+```
+yum -y install libmpc-devel mpfr-devel gmp-devel bzip2
 
->> http://www.vuln.cn/wp-content/uploads/2019/08/libstdc.so_.6.0.26.zip
+cd ~/Downloads
+curl ftp://ftp.mirrorservice.org/sites/sourceware.org/pub/gcc/releases/gcc-4.9.2/gcc-4.9.2.tar.bz2 -O
+tar xvfj gcc-4.9.2.tar.bz2
+
+cd gcc-4.9.2
+./configure --disable-multilib --enable-languages=c,c++
+make -j 4
+make install
+```
 ## 更多Linux語法  
 Linux語法 : https://kknews.cc/zh-tw/code/2kk2a9z.html
