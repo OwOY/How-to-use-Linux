@@ -62,7 +62,7 @@ sudo rm /var/lib/dpkg/lock
 sudo rm /var/lib/apt/lists/lock  
 sudo rm /var/cache/apt/archives/lock  
 ```
-## CXXABI 缺少時，編譯
+## CXXABI 缺少時，編譯  
 1. 下載libstdc++.so.6.2.26
 [下載libstdc++.so.6.2.26](https://github.com/OwOY/How-to-use-Linux/blob/master/libstdc%2B%2B.so.6.0.26)
 2. 覆蓋原有libstdc++.so.6軟連結
