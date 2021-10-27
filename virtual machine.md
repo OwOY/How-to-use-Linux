@@ -23,9 +23,9 @@ sudo find / -name virtualenvwrapper.sh
 ```
 # virtualenv-wrapper path
 export WORKON_HOME=$HOME/.virtualenvs
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
-export VIRTUALENVWRAPPER_VIRTUALENV=/home/docker/.local/bin/virtualenv
-source /home/docker/.local/bin/virtualenvwrapper.sh  
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
+source /usr/local/bin/virtualenvwrapper.sh  
 ```
 - 加載bashrc內變量  
 ```
