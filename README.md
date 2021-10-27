@@ -64,14 +64,13 @@ sudo rm /var/cache/apt/archives/lock
 ```
 ## CXXABI 缺少時，編譯
 ```
-yum -y install libmpc-devel mpfr-devel gmp-devel bzip2
+yum -y install libmpc-devel mpfr-devel gmp-devel bzip2 gcc gcc-c++ make
 
 cd ~/Downloads
 curl ftp://ftp.mirrorservice.org/sites/sourceware.org/pub/gcc/releases/gcc-4.9.2/gcc-4.9.2.tar.bz2 -O
 tar xvfj gcc-4.9.2.tar.bz2
 
 cd gcc-4.9.2
-yum install gcc
 ./configure --disable-multilib --enable-languages=c,c++
 make -j 4
 make install
