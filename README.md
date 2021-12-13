@@ -69,5 +69,9 @@ sudo rm /var/cache/apt/archives/lock
 1. rm libstdc++.so.6
 2. ln libstdc++.so.6.0.26 libstdc++so.6
 ```
+## Close Ping response
+```
+echo 1 > /proc/sys/net/ipv4/icmp_echo_ignore_all
+```
 ## 更多Linux語法  
 Linux語法 : https://kknews.cc/zh-tw/code/2kk2a9z.html
